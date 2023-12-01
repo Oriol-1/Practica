@@ -1,0 +1,350 @@
+/*General*/
+
+body,
+.pageContainer,
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+.pageContainer {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+/*Primer Container*/
+
+#container1 {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+#section1 {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+#element2 {
+    grid-column-start: 2;
+    justify-self: center;
+}
+
+#element3 {
+    grid-column-start: 3;
+}
+
+/*Segundo Container*/
+
+#container2 {
+    display: grid;
+    column-gap: 10px;
+    row-gap: 15px;
+    background-color: rgb(215, 215, 215);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.element3-1234 img {
+    margin: 0px auto;
+}
+
+#something {
+    grid-row: 2;
+    background-color: rgb(215, 215, 215);
+    padding: 15px
+}
+
+div,
+#container2 {
+    margin: 10px 1%;
+    padding: 10px 1%;
+}
+
+.element3-1234 {
+    background-color: rgb(241, 241, 241);
+}
+
+/*Tercer Container*/
+
+#section5 {
+    background-color: rgb(241, 241, 241);
+    text-align: center;
+}
+
+/*Ejercicio 4*/
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#logo {
+    height: 80px;
+    width: 80px;
+}
+
+#container1 {
+    background-image: url("img/fons1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*Menu de navegación*/
+
+ul {
+    list-style-type: none;
+}
+
+ul#nav {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+ul#nav li {
+    display: inline-block;
+    font-weight: 600;
+    margin: 5px;
+}
+
+ul#nav li a {
+    color: rgb(102, 102, 102);
+    text-decoration: none;
+}
+
+ul#nav li a:hover {
+    color: #000000;
+}
+
+#nav img {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+#element1 {
+    justify-content: center;
+    align-items: center;
+}
+
+#element3 i {
+    margin: 0px 10px;
+}
+
+#section2 {
+    background-color: #00000018;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 2rem;
+    color:rgba(255, 68, 0, 0.6);
+    margin: 0;
+}
+
+i {
+    color: gray;
+}
+
+i:hover {
+    color: black;
+}
+
+/*Media querys, el diseño inicial de grid es movile, las media query para sobremesa*/
+
+@media (min-width: 1024px) {
+    #main {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+
+    #nav {
+        display: grid;
+        /*Contacto necesita un pelin mas de espacio*/
+        grid-template-columns: 1fr 1fr 1fr 1fr 1.1fr;
+        column-gap: 25px;
+        justify-content: space-between;
+    }
+
+    #container2 {
+        display: grid;
+        grid-template-rows: 2fr 2fr 100px;
+        grid-template-columns: 2fr 2fr;
+    }
+
+    #element3-2 {
+        grid-column-start: 2;
+    }
+
+    #element3-3 {
+        grid-row-start: 2;
+    }
+
+    #element3-4 {
+        grid-column-start: 2;
+        grid-column-start: 2;
+    }
+
+    #something {
+        padding: 15px;
+        grid-row: 1 / 3;
+        grid-column: 2;
+        text-align: center;
+    }
+
+    #element3-5 {
+        grid-row: 3;
+        grid-column: 1 / 3;
+        place-self: center stretch;
+        text-align: center;
+    }
+}
+
+/*Ejercicio 5*/
+
+.element3-1234 img {
+    display: block;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.subtitles {
+    max-height: 20px;
+    background-color: rgb(240, 128, 128);
+    color: rgba(241, 241, 241);
+}
+
+h2 {
+    margin: 0px 0px 0px 5px;
+}
+
+.articles {
+    padding-bottom: 30px;
+}
+
+.articles p,
+.articles a {
+    margin: 5px;
+    font-size: 0.9rem;
+    color: rgb(90, 90, 90);
+}
+
+.articles a {
+    text-decoration: none;
+}
+
+/*Position relative para el Leer mas...*/
+
+.element3-1234 {
+    position: relative;
+}
+
+.leermas {
+    padding: 0px 1%;
+    position: absolute;
+    bottom: 0;
+}
+
+.articles a:hover {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+/*footer*/
+
+#section5 {
+    justify-content: center;
+    color: rgb(90, 90, 90);
+}
+
+/*side content*/
+
+#section4 {
+    align-items: center;
+    color: rgb(90, 90, 90);
+}
+
+/*Ejercicio 6*/
+
+#logo {
+    animation: aparecer1 3s ease-out;
+}
+
+.aparecer1 {
+    animation: aparecer1 3s ease-out;
+}
+
+.aparecer2 {
+    animation: aparecer2 3s ease-out;
+}
+
+@keyframes aparecer1 {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes aparecer2 {
+    0% {
+        transform: translateY(+100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 1024px) {
+    @keyframes aparecer1 {
+        0% {
+            transform: translateX(-100px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes aparecer2 {
+        0% {
+            transform: translateX(100px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+}
+
+.subtitles h2 {
+    animation: aparecerDerecha 3s ease-in;
+}
+
+@keyframes aparecerDerecha {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+}

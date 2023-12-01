@@ -1,0 +1,12 @@
+
+/* Setting the default font for the body */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for each alert item */
+.alert {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}

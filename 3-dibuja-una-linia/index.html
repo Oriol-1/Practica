@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canvas Line Drawing</title>
+</head>
+<body>
+
+<canvas id="micanvas" width="200" height="200" style="border:1px solid #000;"></canvas>
+
+<script>
+    var canvas = document.getElementById("micanvas");
+    var ctx = canvas.getContext("2d");
+
+    ctx.moveTo(10, 10); // Inicia la línea en la posición (10, 10)
+    ctx.lineTo(180, 180); // Dibuja la línea hasta la posición (180, 180)
+    ctx.strokeStyle = "#f00"; // Establece el color de la línea a rojo
+    ctx.stroke(); // Realiza el trazo
+</script>
+
+</body>
+</html>

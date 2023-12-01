@@ -1,0 +1,90 @@
+/*Ejercicio 2*/
+
+button.active {
+    border-bottom: 2px solid rgb(255, 0, 0) !important;
+    border-radius: 0px !important;
+}
+
+
+/*Ejercicio 3*/
+
+.card-body {
+    border-width: 0px;
+}
+
+.card-footer {
+    border-width: 0px;
+}
+
+
+/*Ejercicio 4*/
+
+.accordion-button::after {
+    background-image: url("../img/icon-arrow.svg")
+}
+
+.accordion-button:not(.collapsed) {
+    color: black;
+}
+
+.accordion-button:focus {
+    -webkit-box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+}
+
+.accordion-item {
+    border-left-color: rgba(0, 0, 0, 0) !important;
+    border-right-color: rgba(0, 0, 0, 0) !important;
+}
+
+
+/*Ejercicio 5*/
+
+.was-validated .form-control:invalid {
+    background-image: url(/img/icon-error.svg);
+}
+
+.valid-feedback {
+    background-color: #279223;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 0;
+    border-radius: 5px;
+}
+
+.invalid-feedback {
+    background-color: #c2433a;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 0;
+    border-radius: 5px;
+}
+
+
+/*Ejercicio 6*/
+
+.btn:hover {
+    background-color: white !important;
+}
+
+.btn-light:hover {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    color: whitesmoke
+}
+
+.btn-primary:hover {
+    color: #5265E1 !important;
+}
+
+.btn-secondary:hover,
+.nav-link:hover,
+.accordion-button:hover {
+    color: #FA5959 !important;
+}
+
+.social:hover {
+    border: 2px solid #FA5959 !important;
+    background-color: #FA5959;
+    margin: -2px;
+    border-radius: 0px !important;
+}
