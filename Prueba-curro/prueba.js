@@ -100,3 +100,5 @@ function wordsTest() {
         return promise;
     }
 }
+/*En resumen, este código procesa una lista de palabras, las sanea eliminando números y convirtiéndolas a minúsculas, y luego intenta insertarlas en una base de datos (simulada aquí por una promesa que se resuelve o rechaza aleatoriamente). El resultado de cada inserción se imprime en la consola.
+*/
