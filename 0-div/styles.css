@@ -1,0 +1,52 @@
+.containerPadre {
+/* aliniar uno debajo de otro */
+
+  
+  }
+
+.containerDerecha{
+
+  /*   display: grid; */
+    /* height: 100vh; */
+
+ display: flex;
+    justify-content: end;
+    /* justify-content: start; */
+    align-items: center;
+    margin:0px
+
+  }
+  .containerCentro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    .containerIzquierda{
+        display: flex;
+     justify-content: start;
+        align-items: center;
+    }
+  .ImageContainer{
+    height: 400px;
+    width: 400px;
+    background-color: Azure;
+    border: 1px solid MidnightBlue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .containerDerecha, .containerCentro, .containerIzquierda {
+    width: 100%; /* Ocupar todo el ancho en disposición vertical */
+  }
+  
+  @media (max-width: 1000px) {
+    .containerPadre {
+      display: flex;
+      flex-direction: column; /* Cambia a disposición vertical en pantallas pequeñas */
+    }
+  
+    .containerDerecha, .containerCentro, .containerIzquierda {
+      width: 100%; /* Ocupar todo el ancho en disposición vertical */
+    }
+  }
